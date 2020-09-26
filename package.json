@@ -1,0 +1,19 @@
+{
+	"name": "apiwarzone",
+	"version": "1.0.0",
+	"description": "Warzone Api ",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server.js"
+	},
+	"author": "Larry",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^2.0.4"
+	},
+	"dependencies": {
+		"call-of-duty-api": "^1.2.16",
+		"express": "^4.17.1"
+	}
+}
