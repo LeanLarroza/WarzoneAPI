@@ -4,8 +4,8 @@
 	"description": "Warzone Api ",
 	"main": "server.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\"",
-		"start": "nodemon server.js"
+		"test": "echo \"TEST OK\"",
+		"start": "node server.js"
 	},
 	"author": "Larry",
 	"license": "ISC",
