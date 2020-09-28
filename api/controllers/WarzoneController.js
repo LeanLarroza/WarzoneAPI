@@ -9,8 +9,8 @@ exports.ready = function(req, res) {
 exports.getstats = function(req, res) {
 	console.log('Request: Player: ' + req.params.player + ' - Platform: ' + req.params.platform),
 		API.login('leanlarroza@est.frba.utn.edu.ar', 'Larrydevc09')
-			.then((res) => {
-				console.log('Result log-in: ' + res);
+			.then((result) => {
+				console.log('Result log-in: ' + result);
 				if (API.isLoggedIn()) {
 					API.MWBattleData(req.params.player, req.params.platform)
 						.then((output) => {
