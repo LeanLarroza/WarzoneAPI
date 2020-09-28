@@ -5,7 +5,7 @@ module.exports = function(app) {
 	// todoList Routes
 	app.route('/init').get(warzoneapi.ready);
 
-	app.route('*').get(warzoneapi.ready);
+	app.route('').get(warzoneapi.ready);
 
 	app.route('/getwarzone/:player/:platform').get(warzoneapi.getstats);
 };
