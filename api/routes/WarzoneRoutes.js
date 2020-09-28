@@ -8,4 +8,6 @@ module.exports = function(app) {
 	app.route('').get(warzoneapi.ready);
 
 	app.route('/getwarzone/:player/:platform').get(warzoneapi.getstats);
+
+	app.route('/getact/:player/:platform').get(warzoneapi.getstatsact);
 };
