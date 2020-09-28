@@ -1,12 +1,11 @@
 'use strict';
 module.exports = function(app) {
-  var warzoneapi = require('../controllers/WarzoneController');
+	var warzoneapi = require('../controllers/WarzoneController');
 
-  // todoList Routes
-  app.route('/init')
-    .get(warzoneapi.ready)
+	// todoList Routes
+	app.route('/init').get(warzoneapi.ready);
 
+	app.route('*').get(warzoneapi.ready);
 
-  app.route('/getwarzone/:player/:platform')
-    .get(warzoneapi.getstats)
+	app.route('/getwarzone/:player/:platform').get(warzoneapi.getstats);
 };
