@@ -16,7 +16,7 @@ exports.getstats = function(req, res) {
 						res.json(output);
 					})
 					.catch((err) => {
-						res.json({ ERROR: req.params.player + ': ' + err });
+						res.json({ message: req.params.player + ': ' + err });
 					});
 			}
 		});
