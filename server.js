@@ -7,4 +7,4 @@ routes(app); //register the route
 
 app.listen(port);
 
-console.log('todo list RESTful API server started on: ' + port);
+console.log('Warzone RESTful API server ON: ' + port);
