@@ -52,7 +52,7 @@ exports.getcombat = function(req, res) {
 			.then((result) => {
 				console.log('Result log-in: ' + result);
 				if (API.isLoggedIn()) {
-					API.MWcombatwz(req.params.player, req.params.platform)
+					API.MWfullcombatwz(req.params.player, req.params.platform)
 						.then((output) => {
 							res.json(output);
 						})
