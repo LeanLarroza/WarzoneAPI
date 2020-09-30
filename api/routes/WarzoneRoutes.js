@@ -11,5 +11,5 @@ module.exports = function(app) {
 
 	app.route('/getact/:player/:platform').get(warzoneapi.getstatsact);
 
-	app.route('/getcombat/:player/:platform').get(warzoneapi.getcombat);
+	app.route('/getid/:player/:platform').get(warzoneapi.getid);
 };
