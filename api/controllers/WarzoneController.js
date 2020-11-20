@@ -70,7 +70,9 @@ exports.getmatchs = function(req, res) {
 			.then((result) => {
 				console.log('Result log-in: ' + result);
 				if (API.isLoggedIn()) {
-					API.MWcombatwz(req.params.player, req.params.platform)
+					const startDate = moment().startOf("day").valueOf();
+					const endDate = moment().startOf("day").valueOf();
+					API.MWfullcombatwzdate(req.params.player,startDate,endDate, req.params.platform)
 						.then((output) => {
 							res.json(output);
 						})
